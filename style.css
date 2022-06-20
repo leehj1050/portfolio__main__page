@@ -18,27 +18,39 @@ main {
 .main__sec {
   max-width: 100%;
   height: 100%;
+  display: flex;
 }
-.main__sec div {
+.main__sec .hover__div {
   margin: auto;
   display: flex;
   align-items: center;
   max-width: 90%;
-  height: 90%;
+  height: auto;
 }
 .main__sec div h1 {
+  max-width: 80%;
   padding: 1.5rem 3rem;
   position: relative;
+  font-size: 5rem;
+  cursor: pointer;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .main__sec div h1 {
+    font-size: 3rem;
+  }
 }
 /*화살표*/
 .last__list__errow {
-  display: flex;
-  line-height: 1.1;
   justify-content: center;
-  margin-left: 0.8em;
-  width: 100px;
+  width: 3.5em;
+  height: 3.5em;
+  font-size: 1.5em;
   border-radius: 50%;
   background-color: lightgoldenrodyellow;
+  text-align: center;
+  line-height: 3;
+  font-weight: 900;
   opacity: 0;
 }
 .main__sec div h1::after {
@@ -51,17 +63,17 @@ main {
 }
 
 /*hover구간*/
-.main__sec div h1:hover .last__list__errow {
+.main__sec .hover__div:hover .last__list__errow {
   animation: blink__arrow 1.5s forwards;
 }
 .last__list__errow:hover {
   transform: scale(1.1);
 }
-.main__sec div h1:hover li:nth-last-child(2) {
+.main__sec .hover__div:hover li:nth-last-child(1) {
   animation: make__rotate 0.5s ease infinite;
 }
-.main__sec div h1:hover::after {
-  width: 450px;
+.main__sec .hover__div h1:hover::after {
+  width: 80%;
   transition: 1s;
 }
 @keyframes make__rotate {
