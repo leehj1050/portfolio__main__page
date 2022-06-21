@@ -19,6 +19,7 @@ main {
   max-width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 .main__sec .hover__div {
   margin: auto;
@@ -38,6 +39,24 @@ main {
 @media (max-width: 800px) {
   .main__sec div h1 {
     font-size: 3rem;
+    padding: 0.5em 0.3em;
+    position: relative;
+  }
+  .main__sec .hover__div .last__list__errow {
+    font-size: 1em;
+    padding: 0.5em;
+    opacity: 0;
+  }
+
+  .main__sec .mobile__text {
+    width: 7.5em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 22.5em;
+    left: 8em;
+    color: orangered;
+    animation: up__and__down 4s ease-in-out infinite;
   }
 }
 /*화살표*/
@@ -60,6 +79,9 @@ main {
   background-color: black;
   position: absolute;
   bottom: 1.5rem;
+}
+.mobile__text {
+  display: none;
 }
 
 /*hover구간*/
@@ -96,5 +118,41 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes up__and__down {
+  0% {
+    bottom: 22.5em;
+  }
+  10% {
+    bottom: 21.8em;
+  }
+  20% {
+    bottom: 21.8em;
+  }
+  30% {
+    bottom: 22.5em;
+  }
+  40% {
+    bottom: 21.8em;
+  }
+  50% {
+    bottom: 22.5em;
+  }
+  60% {
+    bottom: 21.8em;
+  }
+  70% {
+    bottom: 22.5em;
+  }
+  80% {
+    bottom: 21.8em;
+  }
+  90% {
+    bottom: 22.5em;
+  }
+  100% {
+    bottom: 21.8em;
   }
 }
