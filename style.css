@@ -54,7 +54,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: 19em;
+    bottom: 15em;
     left: 8em;
     color: orangered;
     animation: up__and__down 4s ease-in-out infinite;
@@ -124,36 +124,36 @@ main {
 
 @keyframes up__and__down {
   0% {
-    bottom: 19em;
+    bottom: 15em;
   }
   10% {
-    bottom: 22em;
+    bottom: 18em;
   }
   20% {
-    bottom: 22em;
+    bottom: 18em;
   }
   30% {
-    bottom: 19em;
+    bottom: 15em;
   }
   40% {
-    bottom: 22em;
+    bottom: 18em;
   }
   50% {
-    bottom: 19em;
+    bottom: 15em;
   }
   60% {
-    bottom: 22em;
+    bottom: 18em;
   }
   70% {
-    bottom: 19em;
+    bottom: 15em;
   }
   80% {
-    bottom: 22em;
+    bottom: 18em;
   }
   90% {
-    bottom: 19em;
+    bottom: 15em;
   }
   100% {
-    bottom: 22em;
+    bottom: 18em;
   }
 }
